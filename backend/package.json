@@ -6,8 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src"
-  },
+    "lint": "eslint src --max-warnings=0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*": ["yarn lint --fix"]
+	},
   "dependencies": {
     "eslint-plugin-react-hooks": "^4.0.8",
     "next": "9.4.4",
@@ -22,6 +30,8 @@
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "typescript": "^3.9.6"
   }
 }

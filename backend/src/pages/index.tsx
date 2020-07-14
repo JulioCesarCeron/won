@@ -4,7 +4,7 @@ type Props = {
 	title: string;
 };
 
-export default function Home   ({title = "React Next.js" }: Props) {
+export default function Home({ title = "React Next.js" }: Props) {
 
   return (
     <div className="container">
