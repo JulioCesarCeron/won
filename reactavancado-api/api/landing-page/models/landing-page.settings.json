@@ -56,20 +56,17 @@
     },
     "totalPrice": {
       "type": "integer",
-      "required": true
+      "required": false
     },
     "numberInstallments": {
-      "type": "integer",
-      "required": true
+      "type": "integer"
     },
     "priceInstallment": {
-      "type": "integer",
-      "required": true
+      "type": "integer"
     },
     "benefits": {
       "type": "richtext",
-      "default": "Create items as bullet items",
-      "required": true
+      "default": "Create items as bullet items"
     },
     "button": {
       "type": "component",
