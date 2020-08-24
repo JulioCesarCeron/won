@@ -6,11 +6,11 @@
   },
   "options": {},
   "attributes": {
-    "lagel": {
+    "label": {
       "type": "string",
-      "required": true,
       "maxLength": 20,
-      "default": "Comprar"
+      "default": "Comprar",
+      "required": true
     },
     "url": {
       "type": "string",

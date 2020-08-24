@@ -37,6 +37,42 @@
       "type": "component",
       "repeatable": true,
       "component": "page.section-concepts"
+    },
+    "sectionModules": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.section-modules",
+      "required": true
+    },
+    "sectionAgenda": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.section-agenda"
+    },
+    "pricingBox": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.pricing-box"
+    },
+    "totalPrice": {
+      "type": "integer",
+      "required": false
+    },
+    "numberInstallments": {
+      "type": "integer"
+    },
+    "priceInstallment": {
+      "type": "integer"
+    },
+    "benefits": {
+      "type": "richtext",
+      "default": "Create items as bullet items"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button",
+      "required": true
     }
   }
 }
